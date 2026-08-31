@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billel R. — Data Engineer</title>
+<meta name="description" content="Portfolio de Billel R., Data Engineer en alternance — parcours OpenClassrooms, 12 projets du traitement de données à l'IA générative.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__brand">BR<span class="nav__brand-dot">.</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__links" id="navLinks">
+    <a href="#pipeline">Projets</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/BillelR/" target="_blank" rel="noopener" class="nav__cta">GitHub ↗</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero__inner">
+    <p class="mono eyebrow">$ cat profile.json</p>
+    <h1 class="hero__title">
+      Billel R.
+      <span class="hero__role">Data&nbsp;Engineer</span>
+    </h1>
+    <p class="hero__tagline">
+      Je construis des pipelines de données fiables — de la collecte brute au déploiement de systèmes d'IA générative.
+      En formation jusqu'en septembre 2026.
+    </p>
+
+    <div class="badges" role="list">
+      <span class="badge" role="listitem"><strong>11</strong> projets</span>
+      <span class="badge badge--ok" role="listitem"><strong>9</strong> validés</span>
+      <span class="badge badge--wip" role="listitem"><strong>2</strong> en cours</span>
+      <span class="badge" role="listitem">RNCP39775</span>
+    </div>
+
+    <div class="hero__cta">
+      <a href="#pipeline" class="btn btn--primary">Voir les projets</a>
+      <a href="https://github.com/BillelR/" target="_blank" rel="noopener" class="btn btn--ghost">github.com/BillelR</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div>
+        <p class="mono eyebrow">// à propos</p>
+        <h2 class="section-title">Formation Data Engineer,<br>en conditions réelles</h2>
+      </div>
+      <div class="about__text">
+        <p>
+          Formé au titre RNCP39775 « Expert en ingénierie et science des données » via OpenClassrooms,
+          j'ai réalisé douze projets professionnalisants couvrant l'ensemble de la chaîne data :
+          analyse et modélisation, bases relationnelles et NoSQL, infrastructures cloud,
+          orchestration de pipelines, et systèmes d'intelligence artificielle générative (RAG).
+        </p>
+        <p>
+          Ce portfolio retrace ce parcours comme un pipeline — chaque projet est une étape validée,
+          en cours, ou en attente de soutenance.
+        </p>
+        <p>
+          J'ai également effectué un stage de deux semaines à la SNCF, dans la continuité de cette formation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pipeline" id="pipeline">
+    <p class="mono eyebrow">// pipeline de formation</p>
+    <h2 class="section-title">Les projets les plus représentatifs</h2>
+    <p class="pipeline__intro">Sélection de 4 projets parmi le parcours, les plus proches de mon profil cible : bases de données, orchestration, IA générative et gestion de projet.</p>
+
+    <div class="filters" id="filters" role="tablist" aria-label="Filtrer les projets par catégorie">
+      <button class="filter active" data-filter="all">Tout</button>
+      <button class="filter" data-filter="db">Bases de données</button>
+      <button class="filter" data-filter="orch">Orchestration</button>
+      <button class="filter" data-filter="ai">IA générative</button>
+      <button class="filter" data-filter="pm">Gestion de projet</button>
+    </div>
+
+    <ol class="track" id="track">
+
+      <li class="node" data-cat="db" data-status="done">
+        <div class="node__marker"><span class="node__dot"></span></div>
+        <div class="node__card">
+          <div class="node__head">
+            <span class="mono node__index">01</span>
+            <h3>Concevez et analysez une base de données NoSQL</h3>
+            <span class="status status--done">Validé</span>
+          </div>
+          <p class="node__block mono">RNCP39775BC02 — Concevoir et déployer une infrastructure de gestion des données</p>
+          <p class="node__desc">
+            Conception d'une base de données NoSQL orientée documents pour répondre à un besoin
+            métier nécessitant flexibilité et scalabilité, comparée à une solution relationnelle classique.
+          </p>
+          <ul class="node__skills">
+            <li>Modéliser une base de données NoSQL orientée documents</li>
+            <li>Choisir le type de base NoSQL adapté au besoin</li>
+            <li>Interroger et analyser des données non structurées</li>
+          </ul>
+          <div class="node__tags">
+            <span class="tag">MongoDB</span><span class="tag">NoSQL</span><span class="tag">Modélisation documents</span>
+          </div>
+          <a class="node__link" href="https://github.com/BillelR/" target="_blank" rel="noopener">Voir le code ↗</a>
+        </div>
+      </li>
+
+      <li class="node" data-cat="orch" data-status="done">
+        <div class="node__marker"><span class="node__dot"></span></div>
+        <div class="node__card">
+          <div class="node__head">
+            <span class="mono node__index">02</span>
+            <h3>Mettez en place un pipeline d'orchestration des flux</h3>
+            <span class="status status--done">Validé</span>
+          </div>
+          <p class="node__block mono">RNCP39775BC04 — Développer, déployer et optimiser les pipelines de données</p>
+          <p class="node__desc">
+            Mise en place d'un pipeline automatisé d'orchestration des flux de données, de la collecte
+            à la mise à disposition, avec gestion des dépendances et supervision des exécutions.
+          </p>
+          <ul class="node__skills">
+            <li>Automatiser des flux ETL/ELT</li>
+            <li>Orchestrer des tâches de données avec dépendances</li>
+            <li>Superviser l'exécution et gérer les erreurs</li>
+          </ul>
+          <div class="node__tags">
+            <span class="tag">Airflow</span><span class="tag">Kestra</span><span class="tag">ETL/ELT</span>
+          </div>
+          <a class="node__link" href="https://github.com/BillelR/" target="_blank" rel="noopener">Voir le code ↗</a>
+        </div>
+      </li>
+
+      <li class="node" data-cat="ai" data-status="review">
+        <div class="node__marker"><span class="node__dot"></span></div>
+        <div class="node__card">
+          <div class="node__head">
+            <span class="mono node__index">03</span>
+            <h3>Concevez et déployez un système RAG</h3>
+            <span class="status status--review">Soutenance à planifier</span>
+          </div>
+          <p class="node__block mono">RNCP39775BC03 — Créer et/ou adapter un modèle d'apprentissage</p>
+          <p class="node__desc">
+            Conception d'un POC de chatbot intelligent basé sur une architecture RAG, combinant base
+            de données vectorielle et modèles de traitement du langage naturel pour fournir des
+            recommandations personnalisées. Ce POC est le socle du projet MVP mené en Projet 13.
+          </p>
+          <ul class="node__skills">
+            <li>Concevoir un système de génération augmentée par récupération (RAG)</li>
+            <li>Intégrer une base de données vectorielle</li>
+            <li>Déployer un chatbot intelligent en preuve de concept</li>
+          </ul>
+          <div class="node__tags">
+            <span class="tag">Python</span><span class="tag">Base vectorielle</span><span class="tag">NLP / LLM</span><span class="tag">RAG</span>
+          </div>
+          <a class="node__link" href="https://github.com/BillelR/" target="_blank" rel="noopener">Voir le code ↗</a>
+        </div>
+      </li>
+
+      <li class="node" data-cat="pm" data-status="wip">
+        <div class="node__marker"><span class="node__dot"></span></div>
+        <div class="node__card">
+          <div class="node__head">
+            <span class="mono node__index">04</span>
+            <h3>Gérez un projet d'infrastructure</h3>
+            <span class="status status--wip">En cours</span>
+          </div>
+          <p class="node__block mono">RNCP39775BC01 — Manager et piloter un projet Data</p>
+          <p class="node__desc">
+            Pilotage d'un projet de développement d'infrastructure (cas d'étude : robot de contrôle
+            qualité) selon la méthodologie cycle en V, de l'analyse des besoins jusqu'au plan de
+            validation, en passant par la planification des coûts, du budget et des risques.
+          </p>
+          <ul class="node__skills">
+            <li>Piloter un projet selon la méthodologie cycle en V</li>
+            <li>Rédiger un cahier des charges et des spécifications fonctionnelles/techniques</li>
+            <li>Mettre en place un plan de gestion des risques et de V&amp;V</li>
+          </ul>
+          <div class="node__tags">
+            <span class="tag">Cycle en V</span><span class="tag">Cahier des charges</span><span class="tag">MOA / MOE</span>
+          </div>
+          <a class="node__link" href="https://github.com/BillelR/" target="_blank" rel="noopener">Voir le code ↗</a>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="stack" id="stack">
+    <p class="mono eyebrow">// stack technique</p>
+    <h2 class="section-title">Ce que je manipule au quotidien</h2>
+    <div class="stack__grid">
+      <div class="stack__card">
+        <h3 class="mono">Langages &amp; Data</h3>
+        <div class="node__tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span></div>
+      </div>
+      <div class="stack__card">
+        <h3 class="mono">Bases de données</h3>
+        <div class="node__tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">MCD/MLD</span></div>
+      </div>
+      <div class="stack__card">
+        <h3 class="mono">Cloud &amp; Infra</h3>
+        <div class="node__tags"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Infrastructure as Code</span></div>
+      </div>
+      <div class="stack__card">
+        <h3 class="mono">Orchestration</h3>
+        <div class="node__tags"><span class="tag">Airflow</span><span class="tag">Kestra</span><span class="tag">ETL / ELT</span></div>
+      </div>
+      <div class="stack__card">
+        <h3 class="mono">IA générative</h3>
+        <div class="node__tags"><span class="tag">RAG</span><span class="tag">Bases vectorielles</span><span class="tag">LLM</span><span class="tag">NLP</span></div>
+      </div>
+      <div class="stack__card">
+        <h3 class="mono">Gestion de projet</h3>
+        <div class="node__tags"><span class="tag">Cycle en V</span><span class="tag">Agile</span><span class="tag">MOA / MOE</span><span class="tag">Cahier des charges</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="contact__inner">
+    <p class="mono eyebrow">// contact</p>
+    <h2 class="section-title">Travaillons ensemble</h2>
+    <p class="contact__text">
+      En formation jusqu'au 21 septembre 2026, disponible pour échanger sur mes projets ou sur une opportunité.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:rabouzz.billel@gmail.com" class="btn btn--primary">Gmail</a>
+      <a href="https://github.com/BillelR/" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+      <a href="https://www.linkedin.com/in/billel-rabouz-a81427a9/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+    </div>
+    <p class="mono contact__foot">Parcours Data Engineer — OpenClassrooms — RNCP39775 — 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

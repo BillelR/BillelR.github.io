@@ -137,6 +137,8 @@ a { color: inherit; }
 .badge--ok strong { color: var(--accent); }
 .badge--wip { border-color: rgba(245,165,68,0.35); color: var(--accent-2); }
 .badge--wip strong { color: var(--accent-2); }
+.badge--review { border-color: rgba(108,140,255,0.35); color: var(--accent-3); }
+.badge--review strong { color: var(--accent-3); }
 
 .hero__cta { display: flex; flex-wrap: wrap; gap: 0.9rem; }
 
